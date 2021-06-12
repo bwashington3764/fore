@@ -6,13 +6,6 @@
 const express = require("express");
 const app = express();
 
-// our default array of dreams
-const dreams = [
-  "Find and count some sheep",
-  "Climb a really tall mountain",
-  "Wash the dishes"
-];
-
 // make all the files in 'public' available
 // https://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
@@ -21,11 +14,41 @@ app.use(express.static("public"));
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/views/index.html");
 });
-
-// send the default array of dreams to the webpage
-app.get("/dreams", (request, response) => {
-  // express helps us take JS objects and send them as JSON
-  response.json(dreams);
+app.get("/index.html", (request, response) => {
+  response.sendFile(__dirname + "/views/index.html");
+});
+app.get("/404.html", (request, response) => {
+	response.sendFile(__dirname + "/views/404.html");
+});
+app.get("/about.html", (request, response) => {
+	response.sendFile(__dirname + "/views/about.html");
+});
+app.get("/blog-detail.html", (request, response) => {
+	response.sendFile(__dirname + "/views/blog-detail.html");
+});
+app.get("/blog-grid.html", (request, response) => {
+	response.sendFile(__dirname + "/views/blog-grid.html");
+});
+app.get("/product-detail.html", (request, response) => {
+	response.sendFile(__dirname + "/views/product-detail.html");
+});
+app.get("/cart.html", (request, response) => {
+	response.sendFile(__dirname + "/views/cart.html");
+});
+app.get("/checkout.html", (request, response) => {
+	response.sendFile(__dirname + "/views/checkout.html");
+});
+app.get("/contact-us.html", (request, response) => {
+	response.sendFile(__dirname + "/views/contact-us.html");
+});
+app.get("/product-listing.html", (request, response) => {
+	response.sendFile(__dirname + "/views/product-listing.html");
+});
+app.get("/compare.html", (request, response) => {
+	response.sendFile(__dirname + "/views/compare.html");
+});
+app.get("/whishlist.html", (request, response) => {
+	response.sendFile(__dirname + "/views/whishlist.html");
 });
 
 // listen for requests :)
