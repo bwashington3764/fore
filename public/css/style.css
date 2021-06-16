@@ -53,6 +53,35 @@
            5.2 margin
            5.3 padding
 */
+
+.v-space-25{
+  margin-bottom: 25px;
+}
+
+.modal {
+  text-align: center;
+}
+.modal-body{ 
+  position:relative;
+}
+.modal-body input{
+  width:95%;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
 .masonry-wrapper .grid-item .grid-item__inner, .setting .grid-item .grid-item__inner {
   position: relative; }
 
