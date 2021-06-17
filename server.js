@@ -50,6 +50,21 @@ app.get("/compare.html", (request, response) => {
 app.get("/whishlist.html", (request, response) => {
 	response.sendFile(__dirname + "/views/whishlist.html");
 });
+app.get("/chapterone/checkout.html", (request, response) => {
+	response.sendFile(__dirname + "/views/chapterone/checkout.html");
+});
+app.get("/chapterone/delivery-options.html", (request, response) => {
+	response.sendFile(__dirname + "/views/chapterone/delivery-options.html");
+});
+app.get("/chapterone/instagram.html", (request, response) => {
+	response.sendFile(__dirname + "/views/chapterone/instagram.html");
+});
+app.get("/chapterone/product-browsing.html", (request, response) => {
+	response.sendFile(__dirname + "/views/chapterone/product-browsing.html");
+});
+app.get("/chapterone/product-detail.html", (request, response) => {
+	response.sendFile(__dirname + "/views/chapterone/product-detail.html");
+});
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {

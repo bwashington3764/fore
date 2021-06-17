@@ -1,0 +1,703 @@
+/*-------------------------------------------
+
+Resets and global variables
+
+-------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ikea-yellow: #FAD912;
+    --ikea-blue: #0059A3;
+    --ikea-dkblue: #003d6e;
+    --ikea-black: #111111;
+    --ikea-dkgray: #484848;
+    --ikea-mdgray: #e2e2e2;
+    --ikea-mddkgray: #aaaaaa;
+    --ikea-ltgray: #F5F5F5;
+    --ikea-white: #ffffff;
+    --alert-red: #D0363D;
+
+    --in-out-quad:  cubic-bezier(0.455,  0.030, 0.515, 0.955);
+    --in-out-cubic: cubic-bezier(0.645,  0.045, 0.355, 1.000);
+    --in-out-quart: cubic-bezier(0.770,  0.000, 0.175, 1.000);
+    --in-out-quint: cubic-bezier(0.860,  0.000, 0.070, 1.000);
+    --in-out-sine:  cubic-bezier(0.445,  0.050, 0.550, 0.950);
+    --in-out-expo:  cubic-bezier(1.000,  0.000, 0.000, 1.000);
+    --in-out-circ:  cubic-bezier(0.785,  0.135, 0.150, 0.860);
+    --in-out-back:  cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+
+.intro-graph {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    margin-bottom: 2.7rem;
+}
+
+.allcaps {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.section-break {
+    border-top: 1px solid var(--ikea-mdgray);
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+
+/* Button reset */
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    /* background: #0069ed; */
+    /* color: #ffffff; */
+    font-family: "Noto sans", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none !important;
+}
+
+button:hover,
+button:focus {
+    /* background: #0053ba; */
+    outline: none !important;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.main-button {
+    display: inline-block;
+    background-color: var(--ikea-blue);
+    color: var(--ikea-white);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+    border-radius: 3rem;
+    width: 100%;
+    text-decoration: none;
+    transition: background-color 250ms var(--in-out-quart);
+}
+
+.main-button:hover {
+    background-color: var(--ikea-dkblue);
+}
+
+.main-button:active {
+    background-color: var(--ikea-dkgray);
+}
+
+.secondary-button {
+    background-color: var(--ikea-ltgray);
+    display: inline-block;
+    margin: 2rem 2.75rem;
+    padding: 2rem;
+    color: var(--ikea-black);
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 3rem;
+    width: calc(100% - 5.5rem);
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 250ms var(--in-out-quad);
+}
+
+.secondary-button:hover {
+    background-color: var(--ikea-mdgray);
+}
+
+.secondary-button:active {
+    background-color: var(--ikea-mddkgray);
+}
+
+.flex-container {
+    display: flex;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(1rem);
+    animation: slidefade 1s var(--in-out-quart) forwards;
+}
+
+.fade-in-header {
+    animation-delay: 500ms;
+}
+
+.fade-in-block {
+    animation-delay: 1000ms;
+}
+
+.fade-in-block-second {
+    animation-delay: 1500ms;
+}
+
+@keyframes slidefade {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0rem);
+
+    }
+}
+
+header .fullui-image {
+    width: 100%;
+}
+
+
+.iframe-container {
+    margin: 2rem 0 3rem;
+}
+
+.iframe-container iframe{
+    width: 100%;
+    height: auto;
+}
+
+.oversized-img {
+    overflow: hidden;
+    transform: scale(1.12);
+    margin: 1rem 0 3rem;
+}
+
+/*-------------------------------------------
+
+Delivery Options
+
+-------------------------------------------*/
+#delivery h4{
+    margin-bottom: 1.3rem;
+}
+
+.chicklets {
+    margin-bottom: 2rem;
+}
+
+.chicklet {
+    border-radius: 2rem;
+    color: var(--ikea-black);
+    font-size: 1.3rem;
+    flex: auto;
+}
+
+.chicklet:hover {
+    background-color: var(--ikea-mddkgray);
+}
+
+.chicklet.active {
+    background-color: var(--ikea-blue);
+    color: var(--ikea-white);
+}
+
+.chicklet.active:hover {
+    background-color: var(--ikea-dkblue);
+}
+
+.delivery-options .delivery-option {
+    text-align: left;
+    background: var(--ikea-white);
+    border-radius: 1rem;
+    border: .3rem solid var(--ikea-ltgray);
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: all 250ms var(--in-out-cubic);
+}
+
+.delivery-options .delivery-option:hover {
+    border-color: var(--ikea-mdgray);
+}
+
+.delivery-options .delivery-option.active {
+    border-color: var(--ikea-blue);
+}
+
+.factor-sliders {
+    display: flex;
+}
+
+.factor-slider {
+    flex: 1;
+    position: relative;
+    margin: 0 .25rem;
+}
+
+.factor-slider:before, .factor-slider:after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: .5rem;
+    height: .75rem;
+    background-color: var(--ikea-ltgray);
+    
+}
+
+.factor-slider:before {
+    width: 100%;
+    transform: translateY(-.5rem);
+}
+
+.factor-slider:after {
+    width: 50%;
+    background-color: var(--ikea-mddkgray);
+    transform: translateY(-3.45rem);
+}
+
+.delivery-option-eco .slider-sustainability:after {
+    width: 90%;
+}
+
+.delivery-option-eco .slider-speed:after {
+    width: 20%;
+}
+
+.delivery-option-eco .slider-affordability:after {
+    width: 70%;
+}
+
+.delivery-option-express .slider-sustainability:after {
+    width: 40%;
+}
+
+.delivery-option-express .slider-speed:after {
+    width: 90%;
+}
+
+.delivery-option-express .slider-affordability:after {
+    width: 30%;
+}
+
+.delivery-option-pickup .slider-sustainability:after {
+    width: 50%;
+}
+
+.delivery-option-pickup .slider-speed:after {
+    width: 70%;
+}
+
+.delivery-option-pickup .slider-affordability:after {
+    width: 90%;
+}
+
+.sustainability-active .delivery-option-eco .slider-sustainability:after, .speed-active .delivery-option-express .slider-speed:after, .affordability-active .delivery-option-pickup .slider-affordability:after{
+    background-color: var(--ikea-blue);
+}
+
+.action-panel {
+    border-top: 1px solid var(--ikea-mdgray);
+    margin-top: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.action-panel .chicklet {
+    margin: 0 .5rem;
+}
+
+/*-------------------------------------------
+
+Quiz styles
+
+-------------------------------------------*/
+#quiz .content-block{
+    margin: 4rem 5%;
+}
+
+#quiz .quiz-content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+#colours .quiz-content {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.quiz-header-img {
+    width: 100%;
+}
+
+.quiz-prompt {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid var(--ikea-mdgray);
+    padding-bottom: 2rem;
+}
+
+#colours .swatchGroupButton{
+    position: relative;
+    padding:10px;
+    border: 2px solid transparent;
+    border-radius: .6rem;
+    transition: border-color 250ms var(--in-out-quad);
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+#colours .swatchGroupButton p {
+    margin-bottom: 0;
+}
+
+#colours .swatchGroupButton:hover {
+    border-color: var(--ikea-mdgray);
+}
+
+#colours .swatchGroupButton:active {
+    border-color: var(--ikea-blue);
+}
+
+.swatchGroupButton p{
+    text-align: center;
+}
+
+#colours .done{
+    
+}
+#colours .highlight-border, #colours .highlight-border:hover{
+    border-color: var(--ikea-blue);
+}
+
+#quiz .quiz-selection {
+    padding: 0;
+    background-color: var(--ikea-white);
+    width: 48%;
+    margin-bottom: 1rem;
+}
+
+#quiz .quiz-selection img:not(.done) {
+    min-width: 100%;
+}
+
+#quiz #importance button{
+    position: relative;
+    width: 48%;
+    min-height: 10rem;
+    margin: 0 0 1rem 0;
+    background: #F0EFED;
+    font-size: 1.6rem;
+}
+#quiz #importance .selected{
+   background: #C4C4C4;
+}
+
+#quiz #importance .done{
+    transform: translate(2rem, -2rem);
+}
+
+#quiz button{
+    position: relative;
+}
+
+#quiz button:focus {
+    outline: none; 
+    outline-offset: -4px;
+}
+
+#quiz .action-panel {
+    border-top: 1px solid var(--ikea-mdgray);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+#quiz .action-panel .chicklet {
+    margin-left: 1rem;
+}
+#quiz header {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+#quiz main {
+    overflow-y: auto;
+    position: relative;
+    z-index: 0;
+}
+
+#quiz footer  {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0px;
+    width: 88%;
+    z-index: 1;
+}
+
+.hide {
+    display: none;
+}
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 2.5rem);
+    left: calc(50% - 2.5rem);
+    text-align: center;
+    font-size: 24px;
+    padding-top: 7px;
+    color: #000000;
+}
+
+.done{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* transform: translate(2rem, -2rem); */
+}
+
+.swatch{
+    width: 70px;
+    height: 70px;
+    margin:0 5px 5px 0; 
+    display: inline-flex;
+    border-radius: 50%;
+    position: relative;
+}
+
+.swatch .done{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 42px;
+}
+
+.button-label{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: -0.26px;
+    text-align: center;
+    color: #787573;
+    display: block;
+}
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgb(0 0 0 / 25%);
+    border-radius: 6px;
+    width: 160px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    height: 260px;
+}
+
+.dual-profile{
+    width:96px;
+    height:48px;
+}
+
+.combined-style{
+    overflow: hidden;
+    margin: 0 -5%;
+}
+
+.quiz-results-image {
+    transform: scale(1.1);
+}
+
+#confirmation .cards{
+    position: relative;
+}
+
+#confirmation .flex-container {
+    justify-content: space-between;
+}
+
+/*-------------------------------------------
+
+Consult options
+
+-------------------------------------------*/
+
+.strikethrough {
+    display: block;
+    text-decoration: line-through;
+    color: var(--ikea-mddkgray);
+}
+
+.itemprice {
+    color: var(--ikea-blue);
+    font-weight: bold;
+}
+
+.consultation-options p {
+    margin-bottom: 0;
+}
+
+/*-------------------------------------------
+
+Project plan
+
+-------------------------------------------*/
+
+.img-space-bottom {
+    margin-bottom: 2rem;
+}
+
+.header-container {
+    border-bottom: 1px solid var(--ikea-mdgray);
+    padding-bottom: 1rem;
+}
+
+.section-header {
+    margin-bottom: 0;
+    flex-grow: 2;
+}
+
+.project-tasks {
+    border-bottom: 1px solid var(--ikea-mdgray);
+    padding-top: 1.5rem;
+    transition: all 250ms var(--in-out-cubic);
+}
+
+.task-title {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.task-timing {
+    color: var(--ikea-mddkgray);
+}
+
+.profile-pic {
+    background-color: var(--ikea-mddkgray);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+}
+
+.task-details {
+    /* flex-grow: 2; */
+    width: 70%;
+}
+
+.task-owner {
+    /* flex-grow: 1; */
+}
+
+.error-notification {
+    background: var(--alert-red);
+    color: var(--ikea-white);
+    padding: 0 .5rem;
+    border-radius: .5rem;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: all 250ms var(--in-out-cubic);
+}
+
+.error-notification.active {
+    opacity: 1;
+}
+
+.alert-block {
+    background: var(--alert-red);
+    color: var(--ikea-white);
+    margin: 0 -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: .5rem;
+}
+
+.alert-block p {
+    color: var(--ikea-white);
+}
+
+/*-------------------------------------------
+
+Consultation Signup
+
+-------------------------------------------*/
+
+.schedule-list {
+    font-size: 1.6rem;
+}
+
+.schedule-list dt {
+    float: left;
+    width: 25%;
+    font-weight: bold;
+}
+
+.schedule-list dt, .schedule-list dd {
+    margin-bottom: 1rem;
+}

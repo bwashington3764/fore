@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/fakemobile.css">
+        <link rel="stylesheet" href="../css/ikea-styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body id="delivery" class="mobile-emulator">
+        <div class="wrapper">
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <section class="mobile-screen">
+                <img src="../images/ikea/ikea-header.png" alt="" class="fullui-image">
+                <main class="content-block">
+                    <h4>Delivery Options</h4>
+                    <h1>What matters most to you?</h1>
+
+                    <nav class="chicklets">
+                        <button data-delivery-preference="sustainability" class="chicklet active ix-element">Sustainability</button>
+                        <button data-delivery-preference="speed" class="chicklet ix-element">Speed</button>
+                        <button data-delivery-preference="affordability" class="chicklet ix-element">Affordability</button>
+                    </nav>
+
+                    <section class="delivery-options sustainability-active">
+                    </section>
+
+                    <div class="action-panel">
+                        <div class="clicklets">
+                            <button class="chicklet">Cancel</button>
+                            <button class="chicklet active">Continue</button>
+                        </div>
+                    </div>
+                </main>
+            </section>
+        </div> 
+        
+        <script src="../js/deliveryOptions.js" async defer></script>
+    </body>
+</html>
