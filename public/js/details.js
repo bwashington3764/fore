@@ -14,8 +14,12 @@ $(document).mouseleave(function () {
   i++;
 });
 
-$(".sign-up").click(function(){
+$("#newsletterEmail").change(function() {
   $("#hiddenEmail").val($("#newsletterEmail").val());
+})
+
+$(".sign-up").click(function(){
+  //$("#hiddenEmail").val($("#newsletterEmail").val());
   $(".get-recommendations").html(`
     <h3 class="v-space-25">Thanks for signing up!</h3>
     <p>
