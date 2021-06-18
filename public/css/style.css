@@ -54,34 +54,6 @@
            5.3 padding
 */
 
-.v-space-25{
-  margin-bottom: 25px;
-}
-
-.modal {
-  text-align: center;
-}
-.modal-body{ 
-  position:relative;
-}
-.modal-body input{
-  width:95%;
-}
-
-@media screen and (min-width: 768px) { 
-  .modal:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: " ";
-    height: 100%;
-  }
-}
-
-.modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
 .masonry-wrapper .grid-item .grid-item__inner, .setting .grid-item .grid-item__inner {
   position: relative; }
 
@@ -6567,3 +6539,47 @@ html .bg--parallax {
   padding-left: 100px; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+/* BOKS Styles */
+.navigation {
+  background-color: #FFFECE;
+}
+.menu > li {
+  margin-right: 3px;
+}    
+.menu > li > a{
+  padding: 5px 15px;
+}
+.v-space-25{
+  margin-bottom: 25px;
+}
+.modal {
+  text-align: center;
+}
+.modal-body{ 
+  position:relative;
+}
+.modal-body input{
+  width:95%;
+}
+.ps-cart__toggle span{
+  background-color: #2426DE;
+
+}
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* End of BOKS Styles */

@@ -22,10 +22,25 @@
                 <!--img src="../images/ikea/ikea-header.png" alt="" class="fullui-image"-->
                 <main class="content-block">
                     <h2>hello there</h2>
+                    <div id="player" style="height: 100vh; width: 100vh;"></div>
                 </main>
             </section>
         </div> 
-        
+
+        <script>
+            window
+             .threekitPlayer({
+               authToken: '2b225dcd-8998-4459-b8f7-2e22184becb4', //https://foreproject.herokuapp.com/
+               el: document.getElementById("player"),
+               assetId: 'd368dddc-bae9-4f70-b105-6cef40ca061f', //sofa
+               showConfigurator: true,
+               showAR: true
+             })
+             .then(async api => {
+                window.player = api;
+                window.configurator = await api.getConfigurator();
+         });         
+       </script>
         <script src="" async defer></script>
     </body>
 </html>
