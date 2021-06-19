@@ -102,14 +102,38 @@
   background-color: #F3F6F9 !important;
 }
 
-.ps-widget__header h2{
-  margin:0 0 20px 0;
-}
-
 .header__top{
   background-color: #2426DE;
 }
 .header__top p, .header__top a{
+  color:#fff !important;
+}
+.dropdown-menu a{ 
+  color:#A9B6D6 !important;
+}
+
+.ps-widget__header h2{
+  margin:0 0 20px 0;
+}
+
+.ps-widget__title {
+  color: #fff !important;
+}
+
+.ps-list--link a{
+  color:#fff !important;
+}
+
+.ps-footer__content .ps-logo{
+  background-color: #FFFECE; padding:15px; margin-bottom: 4px !important;
+}
+
+
+.ps-footer:before {
+  background-color: rgba(0, 0, 0, 0.85)!important;
+}
+
+.ps-footer__copyright a{
   color:#fff !important;
 }
 
