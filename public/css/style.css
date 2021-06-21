@@ -70,14 +70,14 @@
 .modal {
   text-align: center;
 }
-.modal-body{ 
+.modal-body{
   position:relative;
 }
 .modal-body input{
   width:95%;
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
   .modal:before {
     display: inline-block;
     vertical-align: middle;
@@ -6623,4 +6623,7 @@ html .bg--parallax {
 .pl-100 {
   padding-left: 100px; }
 
+.btn-primary {
+  background-color: #2426DE;
+}
 /*# sourceMappingURL=style.css.map */
