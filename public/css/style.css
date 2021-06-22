@@ -152,7 +152,11 @@
 .bottom{ 
   position:absolute; bottom:0;
 }
-.pad-25{padding:25px}
+.pad-25{padding:15px}
+
+.boks-bg{
+  background-color: #FFFECE;
+}
 
 /* End of BOKS Styles */
 
