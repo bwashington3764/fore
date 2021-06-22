@@ -12,20 +12,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/fakemobile.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    </head>
+        <script src="https://preview.threekit.com/app/js/threekit-player.js"></script>
+      </head>
     <body class="mobile-emulator">
         <div class="wrapper">
             <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
             <section class="mobile-screen">
-                <!--img src="../images/ikea/ikea-header.png" alt="" class="fullui-image"-->
+                <img src="../images/image_from_ios_3_.png" alt="" class="fullui-image">
+                
                 <main class="content-block">
-                    <h2>hello there</h2>
+                    <!--h2>hello there</h2-->
+                    <div id="player" style="height: 100vh; width: 100vh;"></div>
                 </main>
             </section>
         </div> 
-        
+
+        <script>
+            window
+             .threekitPlayer({
+               authToken: '2b225dcd-8998-4459-b8f7-2e22184becb4', //https://foreproject.herokuapp.com/
+               el: document.getElementById("player"),
+               stageId: '3ca203de-36dc-4305-90cc-4af740a466d0',
+               assetId: 'c88625bb-3cdc-417f-ae3e-702f023325d2', //sofa
+               showConfigurator: true,
+               showAR: true
+             })
+             .then(async api => {
+                window.player = api;
+                window.configurator = await api.getConfigurator();
+         });         
+       </script>
         <script src="" async defer></script>
     </body>
 </html>
