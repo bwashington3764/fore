@@ -102,6 +102,14 @@
   background-color: #F3F6F9 !important;
 }
 
+.highlight-blue{
+  color:#2426DE;
+}
+
+.ps-black{
+  background-color:#000000 !important;
+}
+
 .header__top{
   background-color: #2426DE;
 }
@@ -136,6 +144,15 @@
 .ps-footer__copyright a{
   color:#fff !important;
 }
+
+#related-products .row{
+  margin:0 0 20px 0;
+}
+
+.bottom{ 
+  position:absolute; bottom:0;
+}
+.pad-25{padding:25px}
 
 /* End of BOKS Styles */
 

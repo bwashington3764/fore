@@ -1,0 +1,1 @@
+$('#related-products').modal('show');
