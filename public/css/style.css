@@ -158,6 +158,10 @@
   background-color: #FFFECE;
 }
 
+.woodwork{
+  width: 75px; margin: 0 0 0 20px;
+}
+
 /* End of BOKS Styles */
 
 .masonry-wrapper .grid-item .grid-item__inner, .setting .grid-item .grid-item__inner {
