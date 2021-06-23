@@ -29,4 +29,4 @@ $(".sign-up").click(function(){
       You'll be working in style in no time.
     </p>
   `)
-})
+});

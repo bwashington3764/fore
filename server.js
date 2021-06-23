@@ -26,11 +26,17 @@ app.get("/about.html", (request, response) => {
 app.get("/blog-detail.html", (request, response) => {
 	response.sendFile(__dirname + "/views/blog-detail.html");
 });
+app.get("/blog-detail.html", (request, response) => {
+	response.sendFile(__dirname + "/views/blog-detail.html");
+});
 app.get("/blog-grid.html", (request, response) => {
 	response.sendFile(__dirname + "/views/blog-grid.html");
 });
 app.get("/product-detail.html", (request, response) => {
 	response.sendFile(__dirname + "/views/product-detail.html");
+});
+app.get("/threekit-viewer.html", (request, response) => {
+	response.sendFile(__dirname + "/views/threekit-viewer.html");
 });
 app.get("/cart.html", (request, response) => {
 	response.sendFile(__dirname + "/views/cart.html");

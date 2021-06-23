@@ -14,7 +14,7 @@
     <meta name="author" content="Nghia Minh Luong">
     <meta name="keywords" content="Default Description">
     <meta name="description" content="Default keyword">
-    <title>Boks - Threekit Viewer</title>
+    <title>Boks - Product Detail</title>
     <!-- Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:300,400,700%7CMontserrat:300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
@@ -156,7 +156,7 @@
               <input class="form-control" type="text" placeholder="Search Product…">
               <button><i class="ps-icon-search"></i></button>
             </form>
-            <div class="ps-cart"><a class="ps-cart__toggle" href="#"><!--span><i>20</i></span--><i class="ps-icon-shopping-cart"></i></a>
+            <div class="ps-cart"><a class="ps-cart__toggle" href="#"><span><i>20</i></span><i class="ps-icon-shopping-cart"></i></a>
               <div class="ps-cart__listing">
                 <div class="ps-cart__content">
                   <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
@@ -198,46 +198,7 @@
       </div>
     </div>
     <main class="ps-main">
-      <!-- Modal -->
-      <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <!--h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5-->
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="images/shoe/desk-n.png">
-                  <input id="hiddenEmail" type="hidden" />
-                </div>
-                <div class="col-md-6 get-recommendations">
-                  <form class="user-prefs">
-                  <h3 style="padding-bottom: 20px">Get home office inspiration and recommendations</h3>
-                  <div style="padding-bottom: 12px"><small>Signup to our newsletter to get home office solutions and inspirations</small><br></div>
-                  <div style="padding-bottom: 12px">
-                  <label>Name:</label><br>
-                  <input type="text"/><br>
-                  </div>
-                  <div style="padding-bottom: 12px">
-                  <label>Email:</label><br>
-                  <input id="newsletterEmail" type="email"/><br>
-                  </div>
-                </form>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary sign-up">Sign Up</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+ 
       <div class="test">
         <div class="container">
           <div class="row">
@@ -250,84 +211,14 @@
         <div class="ps-container">
           <div class="row">
             <div class="col-lg-10 col-md-12 col-lg-offset-1">
-              <div class="ps-product__thumbnail">
-                <div class="ps-product__preview">
-                  <div class="ps-product__variants">
-                    <div class="item"><img src="images/shoe-detail/1.png" alt=""></div>
-                    <div class="item"><img src="images/shoe-detail/2.png" alt=""></div>
-                    <div class="item"><img src="images/shoe-detail/3.png" alt=""></div>
-                    <div class="item"><img src="images/shoe-detail/4.png" alt=""></div>
-                  </div><a class="ps-product__video" href="product-detail-2.html"><img src="images/shoe-detail/1.png" alt=""><i class="fa fa-play"></i></a>
-                </div>
-                <div class="ps-product__image">
-                  <div class="item"><img class="zoom" src="images/shoe-detail/1.png" alt="" data-zoom-image="images/shoe-detail/1.png"></div>
-                  <div class="item"><img class="zoom" src="images/shoe-detail/2.png" alt="" data-zoom-image="images/shoe-detail/2.png"></div>
-                  <div class="item"><img class="zoom" src="images/shoe-detail/3.png" alt="" data-zoom-image="images/shoe-detail/3.png"></div>
-                  <div class="item"><img class="zoom" src="images/shoe-detail/4.png" alt="" data-zoom-image="images/shoe-detail/4.png"></div>
-                </div>
-              </div>
               <div class="ps-product__thumbnail--mobile">
                 <div class="ps-product__main-img"><img src="images/shoe-detail/1.png" alt=""></div>
                 <div class="ps-product__preview owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="20" data-owl-nav="true" data-owl-dots="false" data-owl-item="3" data-owl-item-xs="3" data-owl-item-sm="3" data-owl-item-md="3" data-owl-item-lg="3" data-owl-duration="1000" data-owl-mousedrag="on">
                   <img src="images/shoe-detail/1.png" alt=""><img src="images/shoe-detail/2.png" alt=""><img src="images/shoe-detail/3.png" alt=""></div>
               </div>
               <div class="ps-product__info">
-                <div class="ps-product__rating">
-                  <select class="ps-rating">
-                    <option value="1">1</option>
-                    <option value="1">2</option>
-                    <option value="1">3</option>
-                    <option value="1">4</option>
-                    <option value="2">5</option>
-                  </select><a href="#">(Read all 8 reviews)</a>
-                </div>
                 <h1>Modern Art Trestle Desk</h1>
-                <p class="ps-product__category"><a href="#"> Office</a>,<a href="#"> Furniture</a>,<a href="#"> Danish</a></p>
-                <h3 class="ps-product__price">€129 <del>€375</del></h3>
-                <div class="ps-product__shopping"><a class="ps-btn mb-10" href="cart.html">Add to cart<i class="ps-icon-next"></i></a>
-                  <div class="ps-product__actions"><a class="mr-10" href="whishlist.html"><i class="ps-icon-heart"></i></a><a href="compare.html"><i class="ps-icon-share"></i></a></div>
-                </div>
-                <div class="ps-product__block ps-product__quickview">
-                  <h4>QUICK REVIEW</h4>
-                  <p>A sincere passion for design, craftsmanship and aesthetics was the essential element in the foundation of ferm LIVING back in 2006.</p>
-                </div>
-                <div class="ps-product__block ps-product__style">
-                  <h4>CHOOSE YOUR STYLE</h4>
-                  <ul>
-                    <li><a href="product-detail.html"><img src="images/shoe/sidebar/1.jpg" alt=""></a></li>
-                    <li><a href="product-detail.html"><img src="images/shoe/sidebar/2.jpg" alt=""></a></li>
-                    <li><a href="product-detail.html"><img src="images/shoe/sidebar/3.jpg" alt=""></a></li>
-                    <li><a href="product-detail.html"><img src="images/shoe/sidebar/2.jpg" alt=""></a></li>
-                  </ul>
-                </div>
-                <div class="ps-product__block ps-product__style">
-                  <h4>SUSTAINABILITY</h4>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <img src="../images/sustainability-badge.png" />
-                    </div>
-                    <div class="col-sm-9">
-                      <p>
-                        Modern Art Trestle Desk has a much smaller carbon footprint because of it’s simple construction.
-                        <br><br>
-                        Modern Art Trestle Desk supports the UN’s <br><strong class="highlight-blue">SDG 13: Climate Action</strong>.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="ps-product__block ps-product__size">
-                  <p><a><img src="../images/tip-button.png"></a></p>
-                  <div class="row">
-                    <div class="col-sm-9">
-                      <strong class="highlight-blue">Choose wood for the long haul</strong>
-                      <p>Products made with renewable wood are designed to last for many years to come.</p>
-                      <button class="ps-btn ps-black" type="button">Shop wood furniture</button>
-                    </div>
-                    <div class="col-sm-3">
-                      <img src="../images/woodwork.png">
-                    </div>
-                  </div>
-                </div>
+                <div id="player" style="height: 100vh; width: 100vh;"></div>
               </div>
               <div class="clearfix"></div>
               <div class="ps-product__content mt-50">
@@ -557,126 +448,6 @@
           </div>
         </div>
       </div>
-
-
-
-      <!--- end add desks here --->
-      <div class="ps-subscribe">
-        <div class="ps-container">
-          <div class="row">
-                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 ">
-                  <h3><i class="fa fa-envelope"></i>Sign up to Newsletter</h3>
-                </div>
-                <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12 ">
-                  <form class="ps-subscribe__form" action="do_action" method="post">
-                    <input class="form-control" type="text" placeholder="">
-                    <button>Sign up now</button>
-                  </form>
-                </div>
-                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 ">
-                  <p>...and receive  <span>$20</span>  coupon for first shopping.</p>
-                </div>
-          </div>
-        </div>
-      </div>
-      <div class="ps-footer bg--cover" data-background="images/background/parallax.jpg">
-        <div class="ps-footer__content">
-          <div class="ps-container">
-            <div class="row">
-                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
-                    <aside class="ps-widget--footer ps-widget--info">
-                      <header><a class="ps-logo" href="index.html"><img src="images/logo-white.png" alt=""></a>
-                        <h3 class="ps-widget__title">Address Office 1</h3>
-                      </header>
-                      <footer>
-                        <p><strong>460 West 34th Street, 15th floor, New York</strong></p>
-                        <p>Email: <a href='mailto:support@store.com'>support@store.com</a></p>
-                        <p>Phone: +323 32434 5334</p>
-                        <p>Fax: ++323 32434 5333</p>
-                      </footer>
-                    </aside>
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
-                    <aside class="ps-widget--footer ps-widget--info second">
-                      <header>
-                        <h3 class="ps-widget__title">Address Office 2</h3>
-                      </header>
-                      <footer>
-                        <p><strong>PO Box 16122 Collins  Victoria 3000 Australia</strong></p>
-                        <p>Email: <a href='mailto:support@store.com'>support@store.com</a></p>
-                        <p>Phone: +323 32434 5334</p>
-                        <p>Fax: ++323 32434 5333</p>
-                      </footer>
-                    </aside>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 ">
-                    <aside class="ps-widget--footer ps-widget--link">
-                      <header>
-                        <h3 class="ps-widget__title">Find Our store</h3>
-                      </header>
-                      <footer>
-                        <ul class="ps-list--link">
-                          <li><a href="#">Coupon Code</a></li>
-                          <li><a href="#">SignUp For Email</a></li>
-                          <li><a href="#">Site Feedback</a></li>
-                          <li><a href="#">Careers</a></li>
-                        </ul>
-                      </footer>
-                    </aside>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 ">
-                    <aside class="ps-widget--footer ps-widget--link">
-                      <header>
-                        <h3 class="ps-widget__title">Get Help</h3>
-                      </header>
-                      <footer>
-                        <ul class="ps-list--line">
-                          <li><a href="#">Order Status</a></li>
-                          <li><a href="#">Shipping and Delivery</a></li>
-                          <li><a href="#">Returns</a></li>
-                          <li><a href="#">Payment Options</a></li>
-                          <li><a href="#">Contact Us</a></li>
-                        </ul>
-                      </footer>
-                    </aside>
-                  </div>
-                  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 ">
-                    <aside class="ps-widget--footer ps-widget--link">
-                      <header>
-                        <h3 class="ps-widget__title">Products</h3>
-                      </header>
-                      <footer>
-                        <ul class="ps-list--line">
-                          <li><a href="#">Shoes</a></li>
-                          <li><a href="#">Clothing</a></li>
-                          <li><a href="#">Accessries</a></li>
-                          <li><a href="#">Football Boots</a></li>
-                        </ul>
-                      </footer>
-                    </aside>
-                  </div>
-            </div>
-          </div>
-        </div>
-        <div class="ps-footer__copyright">
-          <div class="ps-container">
-            <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
-                    <p>&copy; <a href="#">SKYTHEMES</a>, Inc. All rights Resevered. Design by <a href="#"> Alena Studio</a></p>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
-                    <ul class="ps-social">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                  </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
     <!-- JS Library-->
     <script type="text/javascript" src="plugins/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -699,8 +470,10 @@
 <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
 <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <!-- Custom scripts-->
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/details.js"></script>
+<script src="https://preview.threekit.com/app/js/threekit-player.js"></script>    
+<!-- Custom scripts-->
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/threeViewer.js"></script>
+    
   </body>
 </html>
