@@ -35,6 +35,9 @@ app.get("/blog-grid.html", (request, response) => {
 app.get("/product-detail.html", (request, response) => {
 	response.sendFile(__dirname + "/views/product-detail.html");
 });
+app.get("/qr-code.html", (request, response) => {
+	response.sendFile(__dirname + "/views/qr-code.html");
+});
 app.get("/threekit-viewer.html", (request, response) => {
 	response.sendFile(__dirname + "/views/threekit-viewer.html");
 });
