@@ -3,16 +3,18 @@ console.log(queryString);
 
 let i = 0;
 
-setTimeout(function(){
-  $('#exampleModalCenter').modal('show');
- }, 10000);
-
-$(document).mouseleave(function () {
-  if(i < 1)
+if(queryString != 'desk=modern&utm_source=instagram'){
+  setTimeout(function(){
     $('#exampleModalCenter').modal('show');
+  }, 10000);
 
-  i++;
-});
+  $(document).mouseleave(function () {
+    if(i < 1)
+      $('#exampleModalCenter').modal('show');
+
+    i++;
+  });
+}
 
 $("#newsletterEmail").change(function() {
   $("#hiddenEmail").val($("#newsletterEmail").val());
