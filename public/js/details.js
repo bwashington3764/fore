@@ -3,7 +3,8 @@ console.log(queryString);
 
 let i = 0;
 
-if(queryString != 'desk=modern&utm_source=instagram'){
+if(queryString != '?desk=modern&utm_source=instagram'){
+  console.log("Doing newsletter");
   setTimeout(function(){
     $('#exampleModalCenter').modal('show');
   }, 10000);
@@ -14,6 +15,8 @@ if(queryString != 'desk=modern&utm_source=instagram'){
 
     i++;
   });
+} else {
+  console.log("Not doing newsletter");
 }
 
 $("#newsletterEmail").change(function() {
