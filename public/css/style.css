@@ -60,7 +60,7 @@
 }
 .menu > li {
   margin-right: 3px !important;
-}    
+}
 .menu > li > a{
   padding: 5px 15px !important;
 }
@@ -116,7 +116,7 @@
 .header__top p, .header__top a{
   color:#fff !important;
 }
-.dropdown-menu a{ 
+.dropdown-menu a{
   color:#A9B6D6 !important;
 }
 
@@ -149,7 +149,7 @@
   margin:0 0 20px 0;
 }
 
-.bottom{ 
+.bottom{
   position:absolute; bottom:0;
 }
 .pad-25{padding:15px}
@@ -5566,6 +5566,7 @@ textarea.form-control {
   margin: 10px;
   display: inline-block;
   border: 3px solid #e5e5e5; }
+
   .ps-product--detail .ps-product__video i {
     display: inline-block;
     width: 40px;
@@ -5586,6 +5587,7 @@ textarea.form-control {
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease; }
+
     .ps-product--detail .ps-product__video i:before {
       position: absolute;
       top: 50%;
@@ -5596,10 +5598,13 @@ textarea.form-control {
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       color: #111; }
+
   .ps-product--detail .ps-product__video img {
     max-width: 60px; }
+
   .ps-product--detail .ps-product__video:hover i {
     background-color: rgba(42, 195, 125, 0.8); }
+
     .ps-product--detail .ps-product__video:hover i:before {
       color: #fff; }
 
@@ -6652,3 +6657,82 @@ html .bg--parallax {
   background-color: #2426DE;
 }
 /*# sourceMappingURL=style.css.map */
+.ps-product--detail .ps-assembly__video {
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+/*border: 3px solid #e5e5e5; */}
+
+  .ps-product--detail .ps-assembly__video i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+
+    .ps-product--detail .ps-assembly__video i:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #111; }
+
+  .ps-product--detail .ps-assembly__video img {
+    max-height: 345px; }
+
+  .ps-product--detail .ps-assembly__video:hover i {
+    background-color: rgba(42, 195, 125, 0.8); }
+
+    .ps-product--detail .ps-assembly__video:hover i:before {
+      color: #fff; }
+
+
+      .ps-product--detail .ps-product__shopping .ps-workshop__actions {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 10px;
+         }
+        .ps-product--detail .ps-product__shopping .ps-workshop__actions a {
+          position: relative;
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          background-color: #999999;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%;
+          -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
+          .ps-product--detail .ps-product__shopping .ps-workshop__actions a i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: 22px;
+            color: #fff; }
+          .ps-product--detail .ps-product__shopping .ps-workshop__actions a:hover {
+            background-color: #2426DE; }
