@@ -162,6 +162,10 @@
   width: 75px; margin: 0 0 0 20px;
 }
 
+.availability-dot{
+  width:15px; height:15px; background-color:#00FF00; border-radius: 50%; display: inline-block;
+}
+
 /* End of BOKS Styles */
 
 .masonry-wrapper .grid-item .grid-item__inner, .setting .grid-item .grid-item__inner {

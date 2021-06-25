@@ -7,6 +7,7 @@ if(queryString != '?desk=modern&utm_source=instagram'){
   console.log("Doing newsletter");
   setTimeout(function(){
     $('#exampleModalCenter').modal('show');
+    i++;
   }, 10000);
 
   $(document).mouseleave(function () {
@@ -25,6 +26,7 @@ $("#newsletterEmail").change(function() {
 
 $(".sign-up").click(function(){
   //$("#hiddenEmail").val($("#newsletterEmail").val());
+  $(".sign-up").css("display", "none");
   $(".get-recommendations").html(`
     <h3 class="v-space-25">Thanks for signing up!</h3>
     <p>
